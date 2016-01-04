@@ -327,6 +327,7 @@ class Profile(PybbProfile):
     your site profile.
     """
     user = AutoOneToOneField(get_user_model_path(), related_name='pybb_profile', verbose_name=_('User'), on_delete=models.CASCADE)
+    block = CharField(max_length=10)
 
 
     class Meta(object):
