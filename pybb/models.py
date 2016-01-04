@@ -326,7 +326,8 @@ class Profile(PybbProfile):
     Profile class that can be used if you doesn't have
     your site profile.
     """
-    user = AutoOneToOneField(get_user_model_path(), related_name='pybb_profile', verbose_name=_('User'))
+    user = AutoOneToOneField(get_user_model_path(), related_name='pybb_profile', verbose_name=_('User'), on_delete=models.CASCADE,)
+
 
     class Meta(object):
         verbose_name = _('Profile')
