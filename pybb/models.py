@@ -16,6 +16,7 @@ from pybb.profiles import PybbProfile
 from pybb.util import unescape, FilePathGenerator, _get_markup_formatter
 
 from annoying.fields import AutoOneToOneField
+from django.db.models import CharField
 
 try:
     from south.modelsinspector import add_introspection_rules
